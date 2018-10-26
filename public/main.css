@@ -1,0 +1,296 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 50%;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.modal-content {
+  position: fixed;
+  background-color: #fef0cb;
+  padding: 1em 1.5em;
+  width: 50%;
+  border-radius: 5px;
+  color: #02050c;
+}
+
+header {
+  height: 8em;
+  width: 100%;
+  background-image: url(pictures/goldwing.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: center;
+  font-family: 'Fugaz One', cursive;
+  color: #c48a38;
+}
+
+header a {
+  text-decoration: none;
+  text-shadow: -3px 3px 0px #fef0cb, -4px 4px 0px #000;
+  font-size: 1em;
+  color: #c48a38;
+}
+
+header a:hover {
+  text-shadow: -2px 2px 0px #c48a38, -3px 3px 0px #fef0cb;
+  color: #02050c;
+}
+
+.go {
+  text-shadow: -2px 2px 0px #fef0cb, -4px 4px 0px #000;
+  font-size: 1.2em;
+}
+
+.btn {
+  padding: 5px;
+  margin: 2px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: #f0f0f0;
+  box-shadow: 1px 1px rgba(100, 100, 100, 0.7);
+  transition: transform 0.2s ease-in-out;
+  font-weight: 400;
+}
+
+.btn:hover {
+  filter: brightness(93%);
+  transform: scale(1.1);
+}
+
+body {
+  background-color: #fef0cb;
+  font-size: 16px;
+  font-family: 'Kodchasan', sans-serif;
+  color: #232a30;
+}
+
+.planeBtn {
+  height: 4em;
+  width: 4em;
+  margin-left: 0.2em;
+  cursor: pointer;
+  outline: none;
+  color: #02050c;
+  font-family: 'Kodchasan', sans-serif;
+  font-size: 18px;
+  border-radius: 38px;
+  background-color: #c48a38;
+}
+
+.planeBtn:hover {
+  background-color: #878a83;
+  color: #fef0cb;
+}
+
+.fa-plane {
+  font-size: 1.5em;
+}
+
+.picture {
+  margin: 0.1em;
+  border-radius: 5px;
+  box-shadow: 1px 1px rgba(100, 100, 100, 0.7);
+  width: 98%;
+  max-width: 950px;
+}
+
+a {
+  color: #513931;
+}
+
+a:active {
+  color: #af7535;
+}
+
+a:hover {
+  color: #888e80;
+}
+
+.locCon {
+  display: block;
+  overflow: scroll;
+  height: calc(100vh - 11.5em);
+  margin: 0.5em;
+}
+
+.about {
+  margin: 0.5em 1em;
+  padding: 0.5em;
+}
+
+.topLocs {
+  border-radius: 5px;
+  background: #c0c0c0;
+  margin: 0.5em 1em;
+  padding: 0.5em;
+}
+
+.txt {
+  display: none;
+}
+
+.textArea {
+  height: 4.2em;
+  width: 90%;
+  resize: none;
+  outline: none;
+  font-size: 16px;
+  font-family: 'Kodchasan', sans-serif;
+}
+
+footer {
+  height: 1.3em;
+  width: 100%;
+  bottom: 0;
+  background-image: linear-gradient(
+    to bottom,
+    #fef0cb,
+    #dcd7b9,
+    #bdbda7,
+    #a0a395,
+    #878a83
+  );
+  background-color: #878a83;
+  font-size: 14px;
+  color: #fef0cb;
+}
+
+footer a {
+  color: #fef0cb;
+}
+
+footer a:hover {
+  color: #513931;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  header {
+    height: 10em;
+  }
+
+  header a,
+  .go {
+    font-size: 1.4em;
+  }
+
+  .about {
+    margin: 0.5em 4.5em;
+    padding: 0.5em 2em;
+  }
+
+  .topLocs {
+    margin: 0.5em 4.5em;
+    padding: 0.5em 2em;
+  }
+
+  .locCon {
+    height: calc(100vh - 13.5em);
+  }
+
+  .textArea {
+    height: 5.2em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  header {
+    height: 12em;
+  }
+
+  header a,
+  .go {
+    font-size: 1.6em;
+  }
+
+  .about {
+    margin: 0.5em 7em;
+    padding: 0.8em 3em;
+  }
+
+  .topLocs {
+    margin: 0.5em 7em;
+    padding: 0.8em 3em;
+  }
+
+  .locCon {
+    height: calc(100vh - 15.5em);
+  }
+
+  .textArea {
+    height: 5.5em;
+    width: 95%;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  header {
+    height: 14em;
+  }
+
+  header a,
+  .go {
+    font-size: 1.8em;
+  }
+
+  .about {
+    margin: 0.5em 8.5em;
+    padding: 1em 4.5em;
+  }
+
+  .topLocs {
+    margin: 0.5em 8.5em;
+    padding: 1em 4.5em;
+  }
+
+  .locCon {
+    height: calc(100vh - 17.5em);
+  }
+
+  .textArea {
+    height: 5.8em;
+    width: 98%;
+  }
+}
+
+@media only screen and (min-width: 1281px) {
+  header {
+    height: 18em;
+  }
+
+  header a,
+  .go {
+    font-size: 2em;
+  }
+
+  .about {
+    margin: 0.5em 10em;
+    padding: 1.5em 6em;
+  }
+
+  .topLocs {
+    margin: 0.5em 10em;
+    padding: 1.5em 6em;
+  }
+
+  .locCon {
+    height: calc(100vh - 21.5em);
+  }
+
+  .textArea {
+    height: 6.2em;
+    width: 98%;
+  }
+}

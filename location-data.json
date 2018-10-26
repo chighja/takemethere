@@ -1,0 +1,52 @@
+[
+  {
+    "id": "101",
+    "name": "Austria",
+    "picture": "./pictures/austria.jpg"
+  },
+  {
+    "id": "102",
+    "name": "Bahamas",
+    "picture": "./pictures/bahamas.jpg"
+  },
+  {
+    "id": "103",
+    "name": "China",
+    "picture": "./pictures/china.jpg"
+  },
+  {
+    "id": "104",
+    "name": "France",
+    "picture": "./pictures/france.jpg"
+  },
+  {
+    "id": "105",
+    "name": "India",
+    "picture": "./pictures/india.jpg"
+  },
+  {
+    "id": "106",
+    "name": "Italy",
+    "picture": "./pictures/italy.jpg"
+  },
+  {
+    "id": "107",
+    "name": "The Netherlands",
+    "picture": "./pictures/netherlands.jpg"
+  },
+  {
+    "id": "108",
+    "name": "Norway",
+    "picture": "./pictures/norway.jpg"
+  },
+  {
+    "id": "109",
+    "name": "Scotland",
+    "picture": "./pictures/scotland.jpg"
+  },
+  {
+    "id": "110",
+    "name": "Spain",
+    "picture": "./pictures/spain.jpg"
+  }
+]
