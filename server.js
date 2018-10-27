@@ -23,7 +23,7 @@ db.once('open', function() {
   console.log('Connection error:', error);
 });
 
-// GET
+// GET all locations
 app.get('/locations', (req, res) => {
   return Place.find()
     .then(data => {
@@ -35,6 +35,7 @@ app.get('/locations', (req, res) => {
     });
 });
 
+// GET all comments
 app.get('/locations/comment', (req, res) => {
   return UserComment.find()
     .then(data => {
@@ -46,7 +47,7 @@ app.get('/locations/comment', (req, res) => {
     });
 });
 
-// GET by id
+// GET comment by id
 app.get('/locations/comment/:id', (req, res) => {
   return UserComment.findById(req.params.id)
     .then(data => {
@@ -58,7 +59,7 @@ app.get('/locations/comment/:id', (req, res) => {
     });
 });
 
-// POST
+// POST comment
 app.post('/locations/comment', (req, res) => {
   const requiredFields = ['userName', 'comment', '_place'];
   for (let i = 0; i < requiredFields; i++) {
@@ -80,7 +81,7 @@ app.post('/locations/comment', (req, res) => {
     });
 });
 
-// PUT -Update chosen fields
+// PUT -Update chosen fields of comment
 app.put('/locations/comment/:id', (req, res) => {
   let updated = {};
   let updateableFields = ['userName', 'comment'];
@@ -103,7 +104,7 @@ app.put('/locations/comment/:id', (req, res) => {
     });
 });
 
-// DELETE by id
+// DELETE comment by id
 app.delete('/locations/comment/:id', (req, res) => {
   return UserComment.findByIdAndRemove(req.params.id)
     .then(() => {
