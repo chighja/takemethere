@@ -4,7 +4,7 @@ You need a getaway... But where to? The "Take Me There" travel app will help you
 
 # Take Me There is live here:
 
-https://coreyjhighland.github.io/theWeatherApp/
+[- Take Me There -](https://quiet-island-51754.herokuapp.com/ "Take Me There")
 
 # Built with
 
