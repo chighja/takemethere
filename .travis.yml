@@ -4,6 +4,9 @@ deploy: quiet-island-51754
   provider: heroku
   api_key:
     secure: g3BtY6zJaxwKxwJeOEjvFc4Sy1L4TPpYCbdrt0nCt2sSz9YqODJl/4Ucyo/5pjEfzb7zxGucMqai4MB6Tz3gCrLrF+a8xk6iwl3l9mH/07Mt8R4mExLgNOlfDOxndFXRqEcqGzR4pbO+RMrUbcCLhC2cPkj5FEIsf3oLSOIe+JgMoiRMzeU3WUcnk8X9erFdYgd8s3ilKlV/6P/3vrAHmD0oDvuw4Sq4ozKC19lyxQvgXd4sSFZC57nIGao6XsRph41koBwyuCAwzaDa8pJfMK0qWi/B3qBdKLpODujyU/sHqBXVS38ngJ28DRB5cnfvktANPixsyUMTLfvsKzzSDJAO5QmszXZoUfXt0tJhd7qkuc4FDw5qx12TYD1zJMVr8EYli7uVS80Y0qXDGUjBEQ5n87uUiEu/i6td6OnTziX5zBCJNoB02KUSVMuMKOmZZQ9kPzcMn1jCDxqmK3ZSJe80y6ZfJc7c+vxHBWbNWg7wLBM+RLEjk2hfH0wxC+fTp5FjfW52Ze2qna9RCfi/oDlu0TxvM516L5kZruwA0wDgNgXyG2HzlJmyJgIRcIn++livJQUBhVdZzXVQmj5JUfxcCaHCOYKYks81fQpvCM6SnJja8XYhVCwZC8xTpPGDh3JgdrgXgKKh+JllEuEqtzl0Y1H9X1AQMu1exjJ9MIE=
+  file:
+    - "parse-english.js"
+    - "parse-english.min.js"
   app: takemethere
   on:
     repo: chighja/takemethere
