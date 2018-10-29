@@ -12,7 +12,7 @@ app.use(express.static('public'));
 
 // connecting to mongoDb
 mongoose.connect(
-  'mongodb://useradmin:password1@ds161008.mlab.com:61008/top-locations',
+  'mongodb://admin:Password1@ds161008.mlab.com:61008/top-locations',
   { useNewUrlParser: true }
 );
 const db = mongoose.connection;
