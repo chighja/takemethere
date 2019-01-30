@@ -14,6 +14,6 @@ This project uses HTML, CSS, JavaScript, jQuery, Node.js, Express.js, Mongoose.j
 
 ![The Weather Screenshot](https://farm2.staticflickr.com/1959/44778293944_0ccbce3756_z.jpg)
 
-![The Weather Screenshot](https://farm2.staticflickr.com/1941/30563276337_567af0d9f7_z.jpg" width="356" height="640" alt="takemethere mobile0)
+![The Weather Screenshot](https://farm2.staticflickr.com/1941/30563276337_567af0d9f7_z.jpg")
 
 ![The Weather Screenshot](https://farm2.staticflickr.com/1916/44778291444_47b1fba21f_z.jpg)
