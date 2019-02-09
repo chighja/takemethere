@@ -1,88 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Take Me There: Travel Guide</title>
-    <meta
-      name="description"
-      content="Learn today's weather and what you should wear!"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
-      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Fugaz+One|Kodchasan:200"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-  </head>
 
-  <body>
-    <header role="banner">
-      <a href="JavaScript: location.reload(true);">
-        <h1>Take Me There</h1>
-      </a>
-      <h3 class="go">the travel guide</h3>
-      <br />
-    </header>
+<head>
+  <meta charset="utf-8" />
+  <title>Take Me There: Travel Guide</title>
+  <meta name="description" content="Learn today's weather and what you should wear!">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Fugaz+One|Kodchasan:200" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
 
-    <div id="loader"></div>
+<body>
+  <header role="banner">
+    <a href="JavaScript: location.reload(true);">
+      <h1>Take Me There</h1>
+    </a>
+    <h3 class="go">the travel guide</h3>
+    <br>
+  </header>
 
-    <main id="container" role="main" aria-live="polite">
-      <h3>Where would you like to go?</h3>
+  <main id="container" role="main" aria-live="polite">
+    <h3>Where would you like to go?</h3>
 
-      <section id="modal" class="modal">
-        <div class="modal-content">
-          <h5>Are you sure you want to delete this comment?</h5>
-          <button id="yesBtn" class="boxBtn btn">Delete</button>
-          <button id="noBtn" class="boxBtn btn">Cancel</button>
-        </div>
-      </section>
+    <section id="modal" class="modal">
+      <div class="modal-content">
+        <h5>Are you sure you want to delete this comment?</h5>
+        <button id="yesBtn" class="boxBtn btn">Delete</button>
+        <button id="noBtn" class="boxBtn btn">Cancel</button>
+      </div>
+    </section>
 
-      <section id="blankModal" class="modal">
-        <div class="modal-content">
-          <h5>Cannot post an empty comment.</h5>
-          <button id="okBtn" class="boxBtn btn">Okay</button>
-        </div>
-      </section>
+    <section id="blankModal" class="modal">
+      <div class="modal-content">
+        <h5>Cannot post an empty comment.</h5>
+        <button id="okBtn" class="boxBtn btn">Okay</button>
+      </div>
+    </section>
 
-      <section id="locations" class="locCon">
-        <form id="getBtn">
-          <button type="submit" class="planeBtn">
-            <i class="fas fa-plane"></i>
-          </button>
-          <br />
-          <i class="fas fa-sort-up"></i>
-          <br />
-          <label for="btn">Click this button</label>
-        </form>
+    <section id="locations" class="locCon">
+      <form id="getBtn">
+        <button type="submit" class="planeBtn"><i class="fas fa-plane"></i></button>
+        <br>
+        <i class="fas fa-sort-up"></i>
+        <br>
+        <label for="btn">Click this button</label>
+      </form>
 
-        <p class="about">
-          and you'll see some of the most popular vacation spots with reviews
-          from travelers just like you! Don't forget to leave a comment about
-          your most recent visit!
-        </p>
-      </section>
-    </main>
+      <p class="about">and you'll see some of the most popular vacation spots with reviews from travelers just like
+        you!
+        Don't forget to leave a comment about your most recent visit!</p>
+    </section>
 
-    <footer role="contentinfo">
-      <p>
-        Background image by
-        <a href="https://www.pexels.com/@joshsorenson" target="_blank"
-          >Josh Sorenson</a
-        >
-      </p>
-    </footer>
+  </main>
 
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"
-    ></script>
-    <script src="index.js"></script>
-  </body>
+  <footer role="contentinfo">
+    <p>Background image by
+      <a href="https://www.pexels.com/@joshsorenson" target="_blank">Josh Sorenson</a>
+    </p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>
