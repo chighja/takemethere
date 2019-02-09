@@ -70,6 +70,33 @@ header a:hover {
   transform: scale(1.1);
 }
 
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#loader {
+  display: none;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: calc(50% - 23px);
+  top: calc(29% - 23px);
+  border-top: 2px solid #c48a38;
+  border-radius: 100%;
+  transition: transform 0.2s ease-in-out;
+  animation: spin 2s infinite;
+}
+
 body {
   background-color: #fef0cb;
   font-size: 16px;
