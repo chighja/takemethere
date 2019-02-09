@@ -11,10 +11,7 @@ app.use(express.json());
 app.use(express.static('public'));
 
 // connecting to mongoDb
-mongoose.connect(
-  'mongodb://admin:Password1@ds161008.mlab.com:61008/top-locations',
-  { useNewUrlParser: true }
-);
+mongoose.connect(DATABASE_URL, { useNewUrlParser: true });
 const db = mongoose.connection;
 
 db.once('open', function() {
@@ -120,24 +117,8 @@ app.delete('/locations/comment/:id', (req, res) => {
 let server;
 
 function runServer(databaseURL, port = PORT) {
-  return new Promise((resolve, reject) => {
-    mongoose.connect(
-      databaseURL,
-      err => {
-        if (err) {
-          return reject(err);
-        }
-        server = app
-          .listen(port, () => {
-            console.log(`Your app is listening on port ${port}`);
-            resolve();
-          })
-          .on('error', err => {
-            mongoose.disconnect();
-            reject(err);
-          });
-      }
-    );
+  server = app.listen(port, () => {
+    console.log('app listening on port ', port);
   });
 }
 
@@ -156,7 +137,7 @@ function closeServer() {
 }
 
 if (require.main === module) {
-  runServer(DATABASE_URL).catch(err => console.log(err));
+  runServer(DATABASE_URL);
 }
 
 app.listen(process.env.PORT || 5005);
