@@ -1,3 +1,11 @@
+function showLoader() {
+  $('#loader').show();
+}
+
+function hideLoader() {
+  $('#loader').hide();
+}
+
 // gets location and comment data from travelDb
 function getData() {
   // MODEL-VIEW-CONTROL MVC PATTERN
@@ -31,6 +39,7 @@ function maker(loc, cmnt) {
     arrFin.push(arr);
     renderPlace(arrFin);
   });
+  hideLoader();
 }
 
 // renders html elements to contain the comment and parent location data
@@ -218,6 +227,7 @@ function getBtn() {
     event.preventDefault();
     getData();
     $('#locations').empty();
+    showLoader();
   });
 }
 
