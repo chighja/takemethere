@@ -6,10 +6,31 @@ const chaiHttp = require('chai-http');
 const mongoose = require('mongoose');
 const faker = require('faker');
 
-const { runServer, app, closeServer, UserComment } = require('./server.js');
 const { TEST_DATABASE_URL } = require('./config');
 
 chai.use(chaiHttp);
+
+// let server;
+
+// function runServer(databaseURL, port = PORT) {
+//   server = app.listen(port, () => {
+//     console.log('app listening on port ', port);
+//   });
+// }
+
+// function closeServer() {
+//   return mongoose.disconnect().then(() => {
+//     return new Promise((resolve, reject) => {
+//       console.log('Closing server');
+//       server.close(err => {
+//         if (err) {
+//           return reject(err);
+//         }
+//         resolve();
+//       });
+//     });
+//   });
+// }
 
 // seeds the test-database with mock data
 function seedUserCommentData() {
@@ -79,7 +100,7 @@ describe('user comment data resource', function() {
         .then(function(res) {
           expect(res).to.have.status(200);
           expect(res.body).to.have.lengthOf.at.least(1);
-        })
+        });
     });
 
     it('should get user comments with correct fields', function(done) {

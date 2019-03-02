@@ -113,33 +113,4 @@ app.delete('/locations/comment/:id', (req, res) => {
     .catch(err => res.status(500).json({ error: 'something went wrong' }));
 });
 
-// open and close the server
-let server;
-
-function runServer(databaseURL, port = PORT) {
-  server = app.listen(port, () => {
-    console.log('app listening on port ', port);
-  });
-}
-
-function closeServer() {
-  return mongoose.disconnect().then(() => {
-    return new Promise((resolve, reject) => {
-      console.log('Closing server');
-      server.close(err => {
-        if (err) {
-          return reject(err);
-        }
-        resolve();
-      });
-    });
-  });
-}
-
-if (require.main === module) {
-  runServer(DATABASE_URL);
-}
-
 app.listen(process.env.PORT || 5005);
-
-module.exports = { runServer, app, closeServer, UserComment };
