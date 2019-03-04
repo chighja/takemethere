@@ -10,28 +10,6 @@ const { TEST_DATABASE_URL } = require('./config');
 
 chai.use(chaiHttp);
 
-// let server;
-
-// function runServer(databaseURL, port = PORT) {
-//   server = app.listen(port, () => {
-//     console.log('app listening on port ', port);
-//   });
-// }
-
-// function closeServer() {
-//   return mongoose.disconnect().then(() => {
-//     return new Promise((resolve, reject) => {
-//       console.log('Closing server');
-//       server.close(err => {
-//         if (err) {
-//           return reject(err);
-//         }
-//         resolve();
-//       });
-//     });
-//   });
-// }
-
 // seeds the test-database with mock data
 function seedUserCommentData() {
   console.info('seeding user comment data');
